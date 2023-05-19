@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body{
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: antiquewhite;
+   margin: 5px;
+}
+
+header{
+    background-color: lightgray;
+    margin: 25px;
+    color: black;  
+}
+
+nav{
+    background-color: black;
+    color: white;
+    text-decoration: none; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav > a{
+    color: white;
+    text-decoration: none;
+
+}
+nav > a:hover{
+    color: red;
+   text-decoration: underline;
+}
+ main{
+    background-color: lightgray;
+ }
+ h1{
+    background-color: lightcyan;
+    margin: 0px;
+ }
+
+
+ footer{
+    background-color: black;
+    color: white;
+
+ }
+
