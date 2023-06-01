@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site de Fotografia</title>
+  <script>
+    // Exemplo de JavaScript para criar um slideshow de fotos simples
+    const gallery = document.querySelector('.gallery');
+    const images = gallery.querySelectorAll('img');
+    let currentIndex = 0;
+  
+    function showNextImage() {
+      images[currentIndex].style.display = 'none';
+      currentIndex = (currentIndex + 1) % images.length;
+      images[currentIndex].style.display = 'block';
+    }
+  
+    setInterval(showNextImage, 3000); // Altera a imagem a cada 3 segundos
+  </script>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meu Site de Fotografia</h1>
+    <!-- Adicione um menu de navegação, se desejar -->
+  </header>
+
+  <main>
+    <!-- Seção de galeria de fotos -->
+    <section>
+      <h2>Galeria de Fotos</h2>
+      <div class="gallery">
+        <!-- Aqui você pode adicionar suas imagens como elementos <img> -->
+      </div>
+    </section>
+
+    <!-- Seção de portfólio -->
+    <section>
+      <h2>Portfólio</h2>
+      <!-- Adicione seus projetos e informações aqui -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Meu Site de Fotografia. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
